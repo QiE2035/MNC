@@ -1,0 +1,90 @@
+{
+  "Start_StartUp": {
+    "next": [
+      "End_StartUp",
+      "Sub_BilibiliGame",
+      "Sub_Logo",
+      "Sub_HealthyGamingAdvice",
+      "Sub_Initing",
+      "Sub_ResourceLoading",
+      "Sub_WelcomeBack",
+      "Sub_Click_StartGame",
+      "Sub_HomeLoading",
+      "Sub_Click_CloseAnnounce",
+      "Sub_Start_Game"
+    ]
+  },
+  "Sub_BilibiliGame": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/bilibili_game.png"
+  },
+  "Sub_Logo": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": ["startup/sunborn.png", "startup/mica_team.png"],
+    "roi": [
+      [386, 234, 245, 253],
+      [657, 244, 218, 236]
+    ]
+  },
+  "Sub_Initing": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/initing.png",
+    "roi": [578, 581, 205, 133]
+  },
+  "Sub_ResourceLoading": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/resource_loading.png",
+    "roi": [10, 609, 236, 111]
+  },
+  "Sub_Click_StartGame": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "startup/start_game.png",
+    "roi": [399, 526, 481, 140]
+  },
+  "Sub_WelcomeBack": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/welcome_back.png",
+    "roi": [201, 0, 176, 111]
+  },
+  "Sub_HomeLoading": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/home_loading.png",
+    "roi": [13, 569, 248, 135]
+  },
+  "Sub_Click_CloseAnnounce": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "startup/close_announce.png",
+    "roi": [
+      [1158, 31, 122, 143],
+      [1044, 58, 143, 144]
+    ]
+  },
+  "Sub_HealthyGamingAdvice": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": "startup/healthy_gaming_advice.png",
+    "roi": [214, 162, 858, 399]
+  },
+  "End_StartUp": {
+    "recognition": "TemplateMatch",
+    "roi": [828, 346, 203, 196],
+    "template": "oasis/oasis.png",
+    "post_wait_freezes": 1,
+    "next": ["Sub_Click_CloseAnnounce", "End_Home"]
+  },
+  "Sub_Start_Game": {
+    "is_sub": true,
+    "action": "StartApp",
+    "package": "com.sunborn.neuralcloud.cn.bilibili/.GameMainActivity"
+  }
+}

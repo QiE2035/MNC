@@ -1,0 +1,36 @@
+{
+  "Start_Dorm": {
+    "next": ["Click_Dorm", "Sub_Goto_Home"]
+  },
+  "Click_Dorm": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "dorm/dorm.png",
+    "roi": [986, 522, 201, 173],
+    "next": [
+      "Sub_Loading",
+      "Dorm_Sub_Click_GetResource",
+      "Flag_No_GetResource",
+      "Click_Dorm"
+    ]
+  },
+  "Flag_No_GetResource": {
+    "inverse": true,
+    "recognition": "TemplateMatch",
+    "template": "dorm/get_resource.png",
+    "roi": [0, 475, 264, 150],
+    "next": [
+      "Dorm_Sub_Click_GetResource",
+      "Sub_Loading",
+      "End_Home",
+      "Sub_Goto_Home"
+    ]
+  },
+  "Dorm_Sub_Click_GetResource": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "dorm/get_resource.png",
+    "roi": [0, 475, 264, 150]
+  }
+}

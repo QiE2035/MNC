@@ -1,0 +1,23 @@
+{
+  "End_Home": {
+    "recognition": "TemplateMatch",
+    "roi": [828, 346, 203, 196],
+    "template": "oasis/oasis.png"
+  },
+  "Sub_Goto_Home": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "action": "Click",
+    "roi": [168, 0, 173, 123],
+    "template": "common/home.png"
+  },
+  "Sub_Loading": {
+    "is_sub": true,
+    "recognition": "TemplateMatch",
+    "template": ["common/loading_left.png", "common/loading_right.png"],
+    "roi": [
+      [1173, 280, 107, 163],
+      [1173, 280, 107, 163]
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Start_Oasis": {
+    "next": ["Sub_Click_Oasis", "Oasis_Click_GetResource", "Sub_Goto_Home"]
+  },
+  "Sub_Click_Oasis": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "roi": [828, 346, 203, 196],
+    "template": "oasis/oasis.png"
+  },
+  "Oasis_Click_GetResource": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "roi": [0, 486, 318, 146],
+    "template": "oasis/get_resource.png",
+    "next": ["Oasis_Click_GetResource", "End_Home", "Sub_Goto_Home"]
+  }
+}

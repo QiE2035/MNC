@@ -1,0 +1,44 @@
+{
+  "Start_Supply": {
+    "next": [
+      "Sub_Click_Supply",
+      "Click_SupplyPackage",
+      "End_Home",
+      "Sub_Goto_Home"
+    ]
+  },
+  "Sub_Click_Supply": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "supply/supply.png",
+    "roi": [985, 450, 265, 165]
+  },
+  "Click_SupplyPackage": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "supply/supply_package.png",
+    "roi": [0, 245, 234, 172],
+    "next": [
+      "Click_SupplyPackage",
+      "Sub_Click_FreeBuy",
+      "Sub_Click_FreePackage",
+      "End_Home",
+      "Sub_Goto_Home"
+    ]
+  },
+  "Sub_Click_FreePackage": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "supply/free_package.png",
+    "roi": [156, 143, 343, 377]
+  },
+  "Sub_Click_FreeBuy": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "supply/free_buy.png",
+    "roi": [677, 591, 588, 129]
+  }
+}

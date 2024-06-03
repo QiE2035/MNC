@@ -1,0 +1,39 @@
+{
+  "controller": [
+    {
+      "name": "安卓端",
+      "type": "Adb"
+    }
+  ],
+  "resource": [
+    {
+      "name": "B 服",
+      "path": [
+        "{PROJECT_DIR}/resource/common",
+        "{PROJECT_DIR}/resource/bilibili"
+      ]
+    }
+  ],
+  "task": [
+    {
+      "name": "启动",
+      "entry": "Start_StartUp"
+    },
+    {
+      "name": "宿舍",
+      "entry": "Start_Dorm"
+    },
+    {
+      "name": "绿洲",
+      "entry": "Start_Oasis"
+    },
+    {
+      "name": "补给",
+      "entry": "Start_Supply"
+    },
+    {
+      "name": "奖励",
+      "entry": "Start_Reward"
+    }
+  ]
+}

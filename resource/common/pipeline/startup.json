@@ -2,22 +2,15 @@
   "Start_StartUp": {
     "next": [
       "End_StartUp",
-      "Sub_BilibiliGame",
       "Sub_Logo",
       "Sub_HealthyGamingAdvice",
       "Sub_Initing",
       "Sub_ResourceLoading",
-      "Sub_WelcomeBack",
       "Sub_Click_StartGame",
       "Sub_HomeLoading",
       "Sub_Click_CloseAnnounce",
       "Sub_Start_Game"
     ]
-  },
-  "Sub_BilibiliGame": {
-    "is_sub": true,
-    "recognition": "TemplateMatch",
-    "template": "startup/bilibili_game.png"
   },
   "Sub_Logo": {
     "is_sub": true,
@@ -47,12 +40,6 @@
     "template": "startup/start_game.png",
     "roi": [399, 526, 481, 140]
   },
-  "Sub_WelcomeBack": {
-    "is_sub": true,
-    "recognition": "TemplateMatch",
-    "template": "startup/welcome_back.png",
-    "roi": [201, 0, 176, 111]
-  },
   "Sub_HomeLoading": {
     "is_sub": true,
     "recognition": "TemplateMatch",
@@ -79,12 +66,12 @@
     "recognition": "TemplateMatch",
     "roi": [828, 346, 203, 196],
     "template": "oasis/oasis.png",
-    "post_wait_freezes": 1,
+    "post_wait_freezes": 100,
     "next": ["Sub_Click_CloseAnnounce", "End_Home"]
   },
   "Sub_Start_Game": {
     "is_sub": true,
     "action": "StartApp",
-    "package": "com.sunborn.neuralcloud.cn.bilibili/.GameMainActivity"
+    "package": "#TODO/.GameMainActivity"
   }
 }

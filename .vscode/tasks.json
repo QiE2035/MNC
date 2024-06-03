@@ -4,15 +4,15 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "MaaDebugger",
-      "type": "shell",
-      "command": "MaaDebugger",
-      "problemMatcher": []
-    },
-    {
       "label": "MaaHttp",
       "type": "shell",
       "command": "MaaHttp",
+      "problemMatcher": []
+    },
+    {
+      "label": "MaaPiCli",
+      "type": "shell",
+      "command": "./MaaPiCli",
       "problemMatcher": []
     }
   ]

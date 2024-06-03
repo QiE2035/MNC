@@ -2,3 +2,6 @@ debug
 config
 .nicegui
 resource.zip
+
+*.dll
+*.exe

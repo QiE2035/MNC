@@ -1,20 +1,18 @@
 {
   "Start_Reward": {
-    "next": ["Click_Reward", "End_Home", "Sub_Goto_Home"]
+    "next": [
+      "Sub_Click_Reward",
+      "Sub_Click_GetReward",
+      "End_Home",
+      "Sub_Goto_Home"
+    ]
   },
-  "Click_Reward": {
+  "Sub_Click_Reward": {
+    "is_sub": true,
     "action": "Click",
     "recognition": "TemplateMatch",
     "template": "reward/reward.png",
     "roi": [238, 393, 160, 146],
-    "next": ["Click_Reward", "Click_GetReward"]
-  },
-  "Click_GetReward": {
-    "action": "Click",
-    "recognition": "TemplateMatch",
-    "template": "reward/get_reward.png",
-    "roi": [526, 139, 226, 138],
-    "target": [0, 521, 1280, 199],
-    "next": ["Click_GetReward", "Click_Reward", "End_Home"]
+    "post_delay": 1000
   }
 }

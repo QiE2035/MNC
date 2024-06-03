@@ -64,7 +64,10 @@
   },
   "End_StartUp": {
     "recognition": "TemplateMatch",
-    "roi": [828, 346, 203, 196],
+    "roi": [
+      [828, 346, 203, 196],
+      [473, 346, 216, 197]
+    ],
     "template": "oasis/oasis.png",
     "post_wait_freezes": 100,
     "next": ["Sub_Click_CloseAnnounce", "End_Home"]

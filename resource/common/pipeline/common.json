@@ -1,7 +1,10 @@
 {
   "End_Home": {
     "recognition": "TemplateMatch",
-    "roi": [828, 346, 203, 196],
+    "roi": [
+      [828, 346, 203, 196],
+      [473, 346, 216, 197]
+    ],
     "template": "oasis/oasis.png"
   },
   "Sub_Goto_Home": {
@@ -19,5 +22,13 @@
       [1173, 280, 107, 163],
       [1173, 280, 107, 163]
     ]
+  },
+  "Sub_Click_GetReward": {
+    "is_sub": true,
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "reward/get_reward.png",
+    "roi": [526, 139, 226, 138],
+    "target": [0, 521, 1280, 199]
   }
 }

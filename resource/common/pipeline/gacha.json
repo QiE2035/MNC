@@ -1,0 +1,67 @@
+{
+  "Start_Gacha": {
+    "next": ["Flag_Add", "Click_Gacha", "Sub_Goto_Home"]
+  },
+  "Click_Gacha": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "roi": [1020, 121, 260, 428],
+    "template": "gacha/gacha.png",
+    "next": ["Click_Gacha", "Gacha_Click_Right"]
+  },
+  "Click_Gacha_10": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "roi": [1026, 575, 254, 145],
+    "template": "gacha/gacha_10.png",
+    "next": ["Click_Gacha_10", "Click_Skip", "Click_NotEnough"]
+  },
+  "Click_NotEnough": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "gacha/not_enough.png",
+    "roi": [0, 441, 1280, 155],
+    "next": ["Click_NotEnough", "End_Home", "Sub_Goto_Home"]
+  },
+  "Flag_Add": {
+    "recognition": "TemplateMatch",
+    "roi": [1099, 286, 142, 141],
+    "template": "gacha/add.png",
+    "next": "Home_Swipe_Left"
+  },
+  "Flag_Basic": {
+    "recognition": "TemplateMatch",
+    "roi": [417, 51, 448, 465],
+    "template": "gacha/basic.png",
+    "next": "Click_Gacha_10"
+  },
+  "Gacha_Click_Right": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "roi": [676, 574, 145, 146],
+    "template": "gacha/right.png",
+    "next": ["Gacha_Click_Right", "Flag_Basic"]
+  },
+  "Home_Swipe_Left": {
+    "action": "Swipe",
+    "begin": "Flag_Add",
+    "recognition": "TemplateMatch",
+    "roi": [836, 285, 127, 146],
+    "template": "gacha/key.png",
+    "next": ["Home_Swipe_Left", "Click_Gacha"]
+  },
+  "Click_Skip": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "gacha/skip.png",
+    "roi": [1080, 0, 200, 130],
+    "next": ["Click_Skip", "Click_GachaResult"]
+  },
+  "Click_GachaResult": {
+    "action": "Click",
+    "recognition": "TemplateMatch",
+    "template": "gacha/gacha_result.png",
+    "roi": [0, 288, 281, 213],
+    "next": ["Click_GachaResult", "Click_Gacha_10"]
+  }
+}

@@ -32,6 +32,10 @@
       "entry": "Start_Supply"
     },
     {
+      "name": "抽卡",
+      "entry": "Start_Gacha"
+    },
+    {
       "name": "奖励",
       "entry": "Start_Reward"
     }
